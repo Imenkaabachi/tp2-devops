@@ -26,11 +26,21 @@
                     <target>21</target>  <!-- or 8 -->
                 </configuration>
             </plugin>
+    
+            <!-- SonarQube Plugin Configuration -->
             <plugin>
                 <groupId>org.sonarsource.scanner.maven</groupId>
                 <artifactId>sonar-maven-plugin</artifactId>
-                <version>3.9.1.2184</version> <!-- Use the latest version -->
-              </plugin>
+                <version>3.9.1.2184</version> <!-- Latest version -->
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>sonar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
+    
 </project>
