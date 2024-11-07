@@ -37,7 +37,7 @@ jobs:
             -Dsonar.login=${{ secrets.SONAR_TOKEN }}
             
       - name: Set up Snyk
-        uses: snyk/actions/setup@v1
+        uses: snyk/actions/setup@v1.1294.0
         with:
           token: ${{ secrets.SNYK_TOKEN }}
 
