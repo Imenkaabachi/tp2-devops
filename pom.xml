@@ -40,6 +40,12 @@
                     </execution>
                 </executions>
             </plugin>
+
+            <plugin>
+                <groupId>io.snyk</groupId>
+                <artifactId>snyk-maven-plugin</artifactId>
+                <version>latest</version> <!-- Replace 'latest' with the latest version if desired -->
+            </plugin>
         </plugins>
     </build>
     
