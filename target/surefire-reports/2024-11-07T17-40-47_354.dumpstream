@@ -1,4 +1,4 @@
-# Created at 2024-11-07T17:32:36.915
+# Created at 2024-11-07T17:40:47.584
 Boot Manifest-JAR contains absolute paths in classpath 'D:\GL5\devops\tp2\simplejavaapp\target\test-classes'
 Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
 'other' has different root
