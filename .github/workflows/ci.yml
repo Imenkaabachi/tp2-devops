@@ -33,5 +33,5 @@ jobs:
           mvn sonar:sonar \
             -Dsonar.projectKey=Imenkaabachi_tp2-devops \
             -Dsonar.organization=imenkaabachi \
-            -Dsonar.host.url=https://sonarcloud.io/project/overview?id=Imenkaabachi_tp2-devops \
+            -Dsonar.host.url=https://sonarcloud.io \
             -Dsonar.login=${{ secrets.SONAR_TOKEN }}
