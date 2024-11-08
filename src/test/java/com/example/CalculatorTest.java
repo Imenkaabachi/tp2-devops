@@ -34,4 +34,35 @@ public class CalculatorTest {
         });
         assertEquals("Cannot divide by zero", exception.getMessage());
     }
+    @Test
+    public void testSquare() {
+        assertEquals(9, calculator.square(3));
+        assertEquals(0, calculator.square(0));
+        assertEquals(16, calculator.square(-4));
+    }
+
+    @Test
+    public void testPower() {
+        assertEquals(8, calculator.power(2, 3));
+        assertEquals(1, calculator.power(5, 0));  // any number to the power of 0 is 1
+        assertEquals(16, calculator.power(-4, 2)); // negative base with an even exponent
+    }
+
+    @Test
+    public void testAbsoluteValue() {
+        assertEquals(5, calculator.absoluteValue(5));
+        assertEquals(5, calculator.absoluteValue(-5));
+        assertEquals(0, calculator.absoluteValue(0));
+    }
+
+    @Test
+    public void testRacineCarree() {
+        assertEquals(3.0, calculator.racineCarree(9), 0.001);
+        assertEquals(0.0, calculator.racineCarree(0), 0.001);
+        
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+            calculator.racineCarree(-4);
+        });
+        assertEquals("Cannot calculate the square root of a negative number", exception.getMessage());
+    }
 }
